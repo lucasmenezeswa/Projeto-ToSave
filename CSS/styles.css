@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+    position: absolute;
+}
+
+header{
+    background-image: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(200,16,0,1) 35%, rgba(255,187,0,1) 100%);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+section{
+    background-color: white;
+    height: 545.5px;
+}
+
+.nome{
+    font-size: 20px;
+}
+
+.titulo{
+    font-size: 30px;
+    padding: 80px 0px 0px 120px;
+    display: inline-block;
+}
+
+.tema{
+    display: inline-block;
+}
+
+.imagem1{
+    width: 520px;
+    height: 360px;
+    padding-left: 120px;
+    margin: 0; 
+    display: inline-block;  
+}
+
+.formcontainer{
+    max-width: 300px;
+    background-color: #d1d1d1cd;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    margin-left: 340px;
+}
+
+
+h2{
+    font-size: 16px;
+}
+
+.cadastro{
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    color: white;
+    background-image: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(200,16,0,1) 35%, rgba(255,187,0,1) 100%);
+    font-weight: bold;
+}
+
+.corpo1{
+    background-color: black;
+    background-size: cover;
+    padding: 40px;
+    text-align: center;
+}
+
+.corpo2{
+    background-color: black;
+    background-size: cover;
+    padding: 40px;
+    text-align: center;
+}
+
+.foto{
+    border-radius: 10px;
+    width: 480px;
+    margin-left: 40px;
+}
+
+.foto2{
+    width: 0;
+}
+
+.foto3{
+    border-radius: 10px;
+    width: 480px;
+}
+
+
+.descricao{
+    font-size: 22px;
+    padding: 20px;
+    color:white;
+    margin-left:20px;
+    max-width: 40%;
+    display: inline-block;
+    text-align: left;
+
+}
+
+.descricao2{
+    font-size: 22px;
+    padding: 20px;
+    color:white;
+    max-width: 40%;
+    display: inline-block;
+    text-align: left;
+}
+
+.description p, .description h3{
+    margin-bottom: 20px;
+}
+
+.description h3{
+    font-size: 24px;
+}
+
+.rodape{
+    color: white;
+    background-color: #0f0f0f;
+    padding-bottom: 20px;
+}
+
+.redes-sociais{
+    padding: 20px;
+}
+
+#rede1{
+    padding-left: 120px;
+}
+
+#rede2{
+    padding-left: 30px;
+}
+.autor{
+    font-size: 12px;
+    float: right;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+   
+    .formcontainer{
+        float: none;
+        max-width: 300px;
+        margin-top: 60px ;
+        margin-left: 80px;
+        justify-content: center;   
+    }
+
+    .tema{
+       max-width: 90%;
+       display: inline-block;  
+    }
+    
+    .imagem1{
+        height: 300px;
+        width: 400px;
+        padding-left: 100px;
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (max-width: 1140px) {
+   
+    .formcontainer{
+        float: none;
+        margin: 60px 150px 20px 150px;
+        max-width: 100%;
+    }
+
+    .tema{
+       max-width: 90%;  
+    }
+    
+    .imagem1{
+        height: 300px;
+        width: 400px;
+        padding-left: 100px;
+    }
+    
+    .corpo1{
+        margin-top: 500px;
+    }
+    
+    .foto2{
+        border-radius: 10px;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .foto3{
+        border-radius: 10px;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .foto{
+        width: 0;
+    }
+    
+    .descricao{
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .descricao2{
+        max-width: 80%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+   
+    .formcontainer{
+        max-width: 50%;
+        margin: 60px 80px 20px 80px;
+        max-width: 100%;
+    }
+
+    .titulo{
+        padding-left: 100px;
+     } 
+     
+    .imagem1{
+         height: 300px;
+         width: 400px;
+         padding-left: 60px;
+ 
+     }
+     
+    
+    .corpo1{
+        margin-top: 500px;
+    }
+
+    .foto2{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .foto3{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .foto{
+        width: 0;
+    }
+
+    .descricao{
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .descricao2{
+        max-width: 80%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+   
+    .formcontainer{
+        max-width: 50%;
+        margin: 60px 80px 20px 80px;
+        max-width: 100%;
+    }
+
+    .titulo{
+        padding-left: 100px;
+     } 
+     
+    .imagem1{
+         height: 300px;
+         width: 400px;
+         padding-left: 60px;
+ 
+     }
+     
+    
+    .corpo1{
+        margin-top: 500px;
+    }
+
+    .foto2{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .foto3{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .foto{
+        width: 0;
+    }
+
+    .descricao{
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .descricao2{
+        max-width: 80%;
+        text-align: center;
+    }
+}
