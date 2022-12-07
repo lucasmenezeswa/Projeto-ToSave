@@ -10,7 +10,6 @@ body{
 .container{
     max-width: 100%;
     margin: auto;
-    position: absolute;
 }
 
 header{
@@ -25,6 +24,7 @@ header{
 section{
     background-color: white;
     height: 545.5px;
+    overflow: hidden;
 }
 
 .nome{
@@ -34,11 +34,10 @@ section{
 .titulo{
     font-size: 30px;
     padding: 80px 0px 0px 120px;
-    display: inline-block;
 }
 
 .tema{
-    display: inline-block;
+    float: left;
 }
 
 .imagem1{
@@ -46,16 +45,18 @@ section{
     height: 360px;
     padding-left: 120px;
     margin: 0; 
-    display: inline-block;  
 }
 
 .formcontainer{
-    max-width: 300px;
+    float: right;   
+}
+
+.formulario{
     background-color: #d1d1d1cd;
+    max-width: 300px;
     border-radius: 10px;
     padding: 20px;
-    display: inline-block;
-    margin-left: 340px;
+    margin: 100px;
 }
 
 
@@ -106,6 +107,7 @@ input[type="submit"]{
 
 .foto2{
     width: 0;
+    border-radius: 10px;
 }
 
 .foto3{
@@ -165,60 +167,46 @@ input[type="submit"]{
     margin-right: 20px;
 }
 
-@media only screen and (max-width: 1400px) {
-   
-    .formcontainer{
-        float: none;
-        max-width: 300px;
-        margin-top: 60px ;
-        margin-left: 80px;
-        justify-content: center;   
-    }
+@media only screen and (max-width: 1220px) {
 
     .tema{
-       max-width: 90%;
-       display: inline-block;  
-    }
-    
-    .imagem1{
-        height: 300px;
-        width: 400px;
-        padding-left: 100px;
-        display: inline-block;
-    }
-
-}
-
-@media only screen and (max-width: 1140px) {
-   
-    .formcontainer{
         float: none;
-        margin: 60px 150px 20px 150px;
+    }
+
+    .titulo{
         max-width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-top: 80px;
+     } 
+     
+    .imagem1{
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
+     }
+
+     .formcontainer{
+        float: none;
+    }
+    
+    .formulario{
+        background-color: #d1d1d1cd;
+        max-width: 50%;
+        position: absolute;
+        margin: 40px 30px 20px 30px;
+    }
+      
+    .corpo1{
+        padding-top: 450px;
     }
 
-    .tema{
-       max-width: 90%;  
-    }
-    
-    .imagem1{
-        height: 300px;
-        width: 400px;
-        padding-left: 100px;
-    }
-    
-    .corpo1{
-        margin-top: 500px;
-    }
-    
     .foto2{
-        border-radius: 10px;
         width: 80%;
         margin-top: 20px;
     }
 
     .foto3{
-        border-radius: 10px;
         width: 80%;
         margin-top: 20px;
     }
@@ -226,40 +214,50 @@ input[type="submit"]{
     .foto{
         width: 0;
     }
-    
+
     .descricao{
-        max-width: 80%;
+        display: block;
+        margin-left:auto;
+        max-width:none;
         text-align: center;
     }
 
     .descricao2{
-        max-width: 80%;
+        display: block;
+        margin-left:auto;
+        max-width:none;
         text-align: center;
     }
 }
 
 @media only screen and (max-width: 700px) {
-   
-    .formcontainer{
-        max-width: 50%;
-        margin: 60px 80px 20px 80px;
-        max-width: 100%;
-    }
 
     .titulo{
-        padding-left: 100px;
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-top: 80px;
      } 
      
     .imagem1{
-         height: 300px;
-         width: 400px;
-         padding-left: 60px;
- 
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
      }
-     
+
+     .formcontainer{
+        float: none;
+    }
     
+    .formulario{
+        background-color: #d1d1d1cd;
+        max-width: 120%;
+        position: absolute;
+        margin: 20px 30px 20px 30px;
+    }
+      
     .corpo1{
-        margin-top: 500px;
+        padding-top: 450px;
     }
 
     .foto2{
@@ -277,38 +275,48 @@ input[type="submit"]{
     }
 
     .descricao{
-        max-width: 80%;
+        display: block;
+        margin-left:auto;
+        max-width:none;
         text-align: center;
     }
 
     .descricao2{
-        max-width: 80%;
+        display: block;
+        margin-left:auto;
+        max-width:none;
         text-align: center;
     }
 }
 
 @media only screen and (max-width: 400px) {
-   
-    .formcontainer{
-        max-width: 50%;
-        margin: 60px 80px 20px 80px;
-        max-width: 100%;
-    }
 
     .titulo{
-        padding-left: 100px;
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-top: 80px;
      } 
      
     .imagem1{
-         height: 300px;
-         width: 400px;
-         padding-left: 60px;
- 
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
      }
-     
+
+     .formcontainer{
+        float: none;
+    }
     
+    .formulario{
+        background-color: #d1d1d1cd;
+        max-width: 120%;
+        position: absolute;
+        margin: 0px 30px 20px 30px;
+    }
+      
     .corpo1{
-        margin-top: 500px;
+        padding-top: 480px;
     }
 
     .foto2{
@@ -326,12 +334,16 @@ input[type="submit"]{
     }
 
     .descricao{
-        max-width: 80%;
+        display: block;
+        margin-left:auto;
+        max-width:none;
         text-align: center;
     }
 
     .descricao2{
-        max-width: 80%;
+        display: block;
+        margin-left:auto;
+        max-width:none;
         text-align: center;
     }
 }
